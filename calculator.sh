@@ -1,4 +1,4 @@
-s=0
+sum=0
 i="y"
 echo "Enter First Number"
 read n1
@@ -18,7 +18,7 @@ case $ch in
         2)sum=`expr $n1 - $n2`
      	echo "Sub = "$sum;;
     	3)sum=`expr $n1 \* $n2`
-     	echo "Mul = "$sum;;
+     	echo "Mul = "$sum;; 
     	4)sum=`expr $n1 / $n2`
      	echo "Div = "$sum;;
     	*)echo "Invalid choice"
