@@ -1,7 +1,6 @@
-if [ -d "$@" ]; then
-    echo "Number of files is $(find "$@" -type f | wc -l)"
-    echo "Number of directories is $(find "$@" -type d | wc -l)"
-else
-    echo "[ERROR]  Please provide a directory."
-    exit 1
-fi
+echo "enter the directory"
+read n
+c=$(find $n -type f |wc -l)
+echo "number of files " $c
+d=$(find $n -type d |wc -l)
+echo "number of directory "$d
